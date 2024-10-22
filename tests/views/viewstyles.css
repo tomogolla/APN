@@ -1,0 +1,47 @@
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#sidebar {
+    display: flex;
+    width: 250px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+}
+#thin-sidebar {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s;
+    color: #000;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+}
+#thin-sidebar:hover {
+    width: 100px;
+}
+.icon {
+    margin: 10px 0;
+    cursor: pointer;
+}
+#main-sidebar {
+    flex-grow: 1;
+    padding: 10px;
+}
+.topic {
+    margin: 10px 0;
+}
+.sub-topics {
+    margin-left: 20px;
+    display: none; /* Ensure sub-topics are hidden by default */
+}

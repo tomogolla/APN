@@ -1,0 +1,495 @@
+.margin {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    color: #f4f4f4;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+}/* Top Navigation Bar */
+.topnav {
+    background-color: #3e3047;
+    overflow: hidden;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.logo {
+    height: 60px;
+    display: flex;
+    align-items: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.sub-nav {
+    text-align: left;    
+    height: 400px;
+    padding: 40px 20px 20px;
+    background-image: url('assets/image1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.sub-nav1 {
+    text-align: left;    
+    height: 400px;
+    padding: 40px 20px 20px;
+    background-image: url('assets/laboratory.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+.nav-item {
+    color: #1e0336ee;
+    font-weight: 600;
+    font-size: x-small;
+    margin-top: 30px;
+    display: inline;
+    flex-direction: column;
+    text-decoration: none;
+    
+}
+.navitems {
+    text-align: center;
+    margin-top: 70px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px; /* Added padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #007BFF; /* Primary color */
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 5px;
+    border: 1px solid #007BFF; /* Border to match text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.nav-item:hover {
+    background-color: #007BFF;
+    color: #fff; /* Text turns white on hover */
+}
+
+
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Space between the columns */
+}
+
+.courses header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.courses .column {
+    flex: 1; /* Equal width for all columns */
+    display: flex;
+    justify-content: center;
+}
+
+.courses img {
+    max-width: 100%; /* Ensure the image fits the container */
+    height: auto;
+    margin: 0 10px; /* Margin of 10px between images */
+}
+
+
+.courses img {
+    max-width: 180px; /* Ensure the image fits the container */
+    height: 200px; 
+    padding: 0 5px;   
+}
+
+.main {
+    padding: 0px;
+}
+.main-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.about-us {
+    padding-left: 0px;
+    padding-top: 10px;
+    text-align: center;
+    color: #3f3f3f;
+}
+.about-us .title-line {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    
+}
+
+.about-us h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.about-us p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    width: 90%;
+    text-align: center;
+}
+
+.what-we-do {
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: #3f3f3f;
+}
+.what-we-do .title-line {
+    width: 100%;
+    height: 1px;
+    background-color: #333;    
+}
+.what-we-do h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.what-we-do p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    width: 90%;
+    text-align: center;
+}
+
+.container-what-we-do {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #3f3f3f;
+    width: 96%;
+    
+}
+.what-we-do-card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #bbb1b1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.explore-courses {
+    text-align: right;
+    margin-top: 20px;
+    padding-right: 100px;
+    font-size: 20px;
+    color: #3f3f3f;
+}
+.what-we-offer-title {
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: #3f3f3f;
+}
+.what-we-offer-title .title-line {
+    width: 100%;
+    height: 1px;
+    background-color: #333;    
+}
+.container-offer {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    color: #3f3f3f;
+}
+.offer-card {
+    background-color: #fff; /* Background color */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 0; /* Rounded corners */
+    transition: transform 0.3s ease; /* Transition effect */
+    justify-content: center;
+    align-items: center;
+}
+.offer-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.explore-courses {
+    text-align: right;
+    margin-top: 20px;
+    padding-right: 100px;
+    font-size: 20px;
+}
+
+
+#our-partners {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #3f3f3f;
+}
+
+#our-partners h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.partner-card {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.partner-card img {
+    width: 150px;
+    height: auto;
+}
+
+#articles {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #3f3f3f;
+    margin: 20px;
+}
+.articles-title {
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: #3f3f3f;
+}
+.articles-title .title-line {
+    width: 100%;
+    height: 1px;
+    background-color: #333;    
+}
+.container-articles {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    color: #3f3f3f;
+}
+#articles h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.article-card {
+    background-color: #fff; /* Background color */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Transition effect */
+    justify-content: center;
+    align-items: center;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-card h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.article-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.article-card a {
+    display: inline-block;
+    background-color: #c8ddc8;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.article-card a:hover {
+    background-color: #94af96;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 20px; /* Padding for the section */
+    background-color: #f8f9fa; /* Light background color */
+    text-align: left; /* Align text to the left */
+    color: #3f3f3f;
+}
+.contact-title {
+    padding-left: 70px;
+    color: #3f3f3f;
+}
+.contact-title h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #3f3f3f;
+}
+.contact-info {
+    max-width: 800px; /* Maximum width for the contact info */
+    margin: 0 auto; /* Center the contact info */
+    color: #3f3f3f;
+}
+
+.contact-info p {
+    font-size: 16px; /* Font size for contact info */
+    margin-bottom: 10px; /* Space between paragraphs */
+    color: #3f3f3f;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff; /* Footer background color */
+    color: black; /* Footer text color */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding for the footer */
+    position: relative; /* Position relative for layout */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+}
+
+/* Pentagon shape for the mid-right part */
+.pentagon {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    right: 0; /* Align to the right */
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent; /* Adjust size as needed */
+    border-right: 100px solid transparent; /* Adjust size as needed */
+    border-bottom: 173.2px solid rgba(255, 0, 0, 0.5); /* Color and transparency */
+    transform: translateY(-50%); /* Center the shape */
+    z-index: -1; /* Send to back */
+}
+
+/* Smaller pentagon for the left side */
+.pentagon-small {
+    position: fixed;
+    top: 20%; /* Adjust position as needed */
+    left: 0; /* Align to the left */
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; /* Adjust size as needed */
+    border-right: 50px solid transparent; /* Adjust size as needed */
+    border-bottom: 86.6px solid rgba(0, 0, 255, 0.5); /* Color and transparency */
+    z-index: -1; /* Send to back */
+}
+
+
+.fixed-consultation {
+    position: fixed;
+    bottom: 70px;
+    right: 10px; /* Adjusted to 10px from the right margin */
+    display: flex;
+    align-items: center; /* Align items to the center */
+    background-color: transparent; /* Changed to transparent background */
+    z-index: 1000;
+    flex-direction: row; /* Changed to row to place button before icon */
+    pointer-events: none; /* Prevents scrolling */
+}
+
+.consultation-button {
+    background-color: transparent; /* Changed to transparent background */
+    color: black;
+    padding: 10px 20px;
+    font-size: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    pointer-events: auto; /* Allows button to be clickable */
+}
+
+.whatsapp-logo {
+    width: 40px;
+    height: auto;
+    margin-left: 10px; /* Maintain margin between button and icon */
+}
+
+.consultation-button:hover {
+    background-color: rgba(244, 244, 244, 0.5); /* Added transparency on hover */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    color: #333;
+}
+.header {
+    text-align: center;
+    padding: 20px o;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+}
+.content div {
+    background: #fff;
+    padding: 20px;
+    width: 48%;
+}
+.footer p {
+    margin: 0;
+}
+.highlight {
+    background-color: #3e3047;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+
+}

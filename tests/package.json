@@ -1,0 +1,28 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
+  },
+  "author": "Tom_Ogolla <tomogolla637@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.18.1",
+    "method": "^2.0.0",
+    "method-override": "^3.0.0",
+    "mysql2": "^3.11.3",
+    "override": "^0.0.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

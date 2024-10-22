@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form action="/quiz/<%= quizID %>" method="post">
+        <% questions.forEach(q => { %>
+            <div>
+                <p><%= q.question %></p>
+                <% q.options.forEach(o => { %>
+                    <input type="radio" name="answer" value="<%= o %>">
+                    <%= o %>
+                <% }); %>
+            </div>
+        <% }); %>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

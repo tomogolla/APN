@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Dashboard - Login</title>
+    <link rel="stylesheet" href="reglog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a id="toggleBtn" class="menu-icon"><i class="fas fa-bars"></i></a>
+            <a class="active" href="students.html">Students Center</a>
+            <a href="academy.html">Academy</a>
+            <a href="tutors.html">Community</a>
+            <a href="courses.html">Courses</a> 
+            <a href="/logout?_method=DELETE">Logout</a>           
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2>Login</h2>
+        <% if (message.error) { %>
+            <p style="color: red;"><%= message.error %></p>
+        <% } %>
+        <form action="/login" method="post">
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/register">Register</a></p>
+    </div>    
+</body>
+</html>

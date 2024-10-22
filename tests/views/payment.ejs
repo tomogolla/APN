@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+        function showPaymentForm() {
+            document.getElementById('paymentForm').style.display = 'block';
+        }
+        function showconfirmation(){
+            document.getElementById('confirmationForm').style.display = 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="payment-container">
+        <h2>Complete Your Payment</h2>
+        <p>Please complete your payment via Mpesa. Once payment is verified, your course will be unlocked.</p>
+        <p>Iinstructions: [Provide payment details]</p>
+        <a onclick="showPaymentForm()">Proceed to Payment</a>
+        <a onclick="showconfirmation()">Show Confirmation Form</a>
+        <form id="paymentForm" style="display:none;">
+       
+        </form>
+        <form id="confirmationForm" action="/updatePayment" method="post" style="display:none;">
+            <h3>Payment Confirmation</h3>
+            <input type="hidden" name="email" value="<%= user.email %>">
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+</body>
+</html>
