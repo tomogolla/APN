@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a id="toggleBtn" class="menu-icon"><i class="fas fa-bars"></i></a>
+            <a class="active" href="students.html">Students Center</a>
+            <a href="quiz.ejs">Quizzes</a>
+            <a href="academy.html">Academy</a>
+            <a href="views/learners-dashboard.ejs">Progress</a>
+            <a href="courses.html">Courses</a> 
+            <a href="/logout?_method=DELETE">Logout</a>           
+        </div>
+    </header>
+    <nav class="sidebar" id="sidebar">            
+            <header>            
+                <div class="logo-container"> 
+                    <img src="assets/logo.png" alt="logo" class="logo">
+            </div>
+        </header>
+        <div class="side-bar-menu">
+            <div class="item"><a href="#"><i class="fas fa-user"></i>Profile</a></div>
+            <div class="item">
+                <a href="#"><i class="fas fa-book"></i>Courses</a>
+            </div>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Unit 1</a>
+                    <a href="#" class="sub-item">Unit 2</a>
+                    <a href="#" class="sub-item">Unit 3</a>
+                </div>
+                <div class="item"><a href="#"><i class="fas fa-chalkboard-teacher"></i>Tutors</a></div>
+                <div class="item"><a href="#"><i class="fas fa-graduation-cap"></i>Academy</a></div>
+                <div class="item"><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></div>
+            </div>
+        </div>
+    </nav>
+     
+
+    <!-- Main Content -->
+    <div id="main">
+        <section class="introduction-info">
+            <h1>Africa Pharmaceutical Network</h1>            
+            <p>The African Pharmaceutical Network (APN) is a network that brings together pharmacy professionals, stakeholders and organizations working in the African Pharmaceutical Sector for knowledge sharing, policy shaping and innovation nurturing partnerships towards a robust pharmaceutical sector anchored on; reliable access to safe, efficacious and affordable quality medicines and pharmaceuticals services for the African people.</p>
+        </section>
+
+        <section class="course-info">
+            <h1>Courses</h1>
+            <h4>Pharmaceutical Supply Chain Management</h4>
+            <p>In this course, you will delve into the introduction to Pharmaceutical Supply Chain Management.</p>
+        </section>
+
+        <!-- New Carousel Section for Google Slides -->
+        <section id="google-slides">
+            <h2>Course Content</h2>
+            <div>
+                <div class="slides">                    
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQyAJgqAUEiAIKdxp_K-p9HmYR0yo2wNhOKx4Mla2YZqqzHaVTjlTXrBPLbtR-whd2nmWPAHOb8AQ9n/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>                                        
+                </div>
+            </div>  
+            <section class="course-info">
+                <h4>Pharmaceutical Regulatory Affairs</h4>
+                <p>In this course, there is more about the pharmaceutical supply chain and the role of the pharmacist.</p>
+            </section>
+    
+            <!-- New Carousel Section for Google Slides -->
+            <section>
+                <h2>Course Content</h2>
+                <div>
+                    <div class="slides">                    
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS4zx4k4DwzzsZYH92ZvvzZD6E6IUzPZ4FCpCWav-sX2I-xAVSBMFgwShlOuofiF0p1uYV7KM0P2LJT/embed?start=false&loop=false&delayms=10000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>"></iframe>                                        
+                    </div>
+                </div>            
+        </section>
+        <section>
+            <h4>Pharmaceutical Quality Assurance</h4>
+            <h2>Course Content</h2>
+            <div>
+                <div class="slides">                    
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS4zx4k4DwzzsZYH92ZvvzZD6E6IUzPZ4FCpCWav-sX2I-xAVSBMFgwShlOuofiF0p1uYV7KM0P2LJT/embed?start=false&loop=false&delayms=10000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>"></iframe>                                        
+                </div>
+            </div>            
+        </section>
+        <section class="course-info">
+            <h4>Pharmaceutical Regulatory Affairs</h4>
+            <p>In this course, there is more about the pharmaceutical regulatory affairs and the role of the pharmacist.</p>
+            <div class="slides">                    
+                <div class="slides">                    
+                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTXXPR8e9luRcwBaNcLVXSndjlFkFwBQJ59G7jse_iYeTlMttGIwfAd9sXSnfspnUXn4KCTkFNZ-pzd/pub?embedded=true" width="600" height="400" frameborder="0" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        // Get references to the elements
+        const toggleBtn = document.getElementById('toggleBtn');
+        const sidebar = document.getElementById('sidebar');
+    
+        // Function to open sidebar
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+        });
+    </script>
+    <script>
+        // Toggle Sub Menu
+        document.getElementById("dropdown").addEventListener("click", function () {
+            var subMenu = document.getElementsByClassName("sub-menu")[0];
+            if (subMenu.style.display === "block") {
+                subMenu.style.display = "none";
+            } else {
+                subMenu.style.display = "block";
+            }
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

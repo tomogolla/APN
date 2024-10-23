@@ -1,0 +1,125 @@
+
+.margin {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.body {
+    font-family: 'Yu Gothic', 'YuGothic', sans-serif;
+    padding: 5px;
+    font-size: 15px; /* Set font size to 15px */
+}
+.topnav {
+    background-color: #3e3047;
+    overflow: hidden;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 60px;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar i {
+    padding-top: 50px;
+    font-size: 18px;
+    color: #3e3047;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar i:hover {
+    color: #0056b3;
+}
+
+.sidebar img {
+    width: 30px;
+    margin-bottom: 20px;
+}
+.sidebar a {
+    margin-bottom: 20px;
+}
+.content {
+    margin-left: 60px;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.header img {
+    width: 30px;
+}
+.header button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #3e3047;
+    cursor: pointer;
+    color: #fff;
+}
+.week {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.week-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+.task a {
+    color: red;
+    text-decoration: none;
+}
+.task span {
+    color: gray;
+    font-size: xx-small;
+}
